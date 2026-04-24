@@ -22,7 +22,7 @@ weatherapp/
 │   └── server.ts       # Servidor Express + rota /weather
 ├── views/
 │   └── index.html      # Frontend (HTML, CSS, JS)
-├── .env                # Variáveis de ambiente (API Key e porta)
+├── .env                # Variáveis de ambiente (criado por você)
 ├── tsconfig.json       # Configuração do TypeScript
 └── package.json
 ```
@@ -44,16 +44,20 @@ cd weatherapp
 npm install
 ```
 
-### 3. Configure o arquivo `.env`
+### 3. Crie o arquivo `.env` na raiz do projeto
 
-Abra o arquivo `.env` na raiz do projeto e substitua `Chave_API` pela sua chave real do OpenWeatherMap:
+O arquivo `.env` **não está incluso** no projeto por segurança. Você precisa criá-lo manualmente na pasta raiz `weatherapp/`.
+
+Crie um arquivo chamado `.env` e adicione exatamente o seguinte conteúdo:
 
 ```env
 API_KEY=sua_chave_aqui
 PORT=3000
 ```
 
-> 💡 Para obter uma chave gratuita, crie uma conta em [openweathermap.org](https://openweathermap.org/api) e acesse **API Keys** no painel. A chave pode levar até **10 minutos** para ativar após a criação.
+> ⚠️ Substitua `sua_chave_aqui` pela sua chave real do OpenWeatherMap. Sem esse arquivo o servidor não conseguirá se conectar à API e retornará erro 500.
+
+> 💡 Para obter uma chave gratuita, crie uma conta em [openweathermap.org](https://openweathermap.org/api), acesse **API Keys** no painel e gere uma nova chave. Ela pode levar até **10 minutos** para ativar após a criação.
 
 ---
 
