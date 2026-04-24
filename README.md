@@ -31,10 +31,10 @@ weatherapp/
 
 ## ⚙️ Configuração
 
-### 1. Clone ou extraia o projeto
+### 1. Clone  o projeto
 
 ```bash
-# Se vier como .zip, extraia e entre na pasta:
+entre na pasta:
 cd weatherapp
 ```
 
